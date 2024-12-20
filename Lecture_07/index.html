@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Forms</title>
+</head>
+
+<body>
+    <h1>Learning Forms</h1>
+    <form action="post">
+
+        <!-- Text Input -->
+        <div>
+            <label for="username">Enter your username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+
+        <!-- Ratio -->
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe to my Newsletter</label>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="comment">Enter your Comments</label>
+            <br>
+            <textarea name="comments" id="comment" rows="5" cols="50"></textarea>
+        </div>
+
+        <!-- Select -->
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
