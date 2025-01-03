@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Universal Selector */
+        *{
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        /* Element Selector */
+        div{
+            background-color: #eafaff;
+        }
+
+        /* Class Selector */
+        .para-one{
+            color: #ff0000;
+        }
+
+        /* ID Selector */
+        #para-two{
+            color: #3eff3e;
+        }
+        /* Child Selector */
+        div > p{
+            color: #ff40ff;
+            background-color: #ffe0ff;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: #00b900;
+            background-color: #deffde;
+        }
+
+        /* Pseudo-class Selector */
+        a:visited{
+            color: lightcoral;
+        }
+
+        a:link {
+            color: lawngreen;
+        }
+
+        a:active{
+            background-color: lightseagreen;
+        }
+
+        a:hover{
+            background-color: #a9ffe2;
+        }
+
+        p:first-child{
+            background-color: #ffd7dd;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="para-one">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, maiores delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ea inventore laudantium illo maiores voluptates minus, amet dolore tempora. Iste, dolorem.</p>
+    </main>
+
+    <div class="div-one">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, impedit culpa.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat architecto laboriosam fugiat.</p>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, perferendis! Aut, error?</p>
+        </article>
+    </div>
+
+    <div id="para-two">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique dolores vero quaerat.
+    </div>
+        
+    <a href="https://www.google.com">Click here to go to Google</a>
+    <a href="https://www.facebook.com">Click here to go to Facebook</a>
+
+    <br><br><br><br><br><br><br>
+
+    <p>Learn more: <a href="https://web.dev/learn/css/pseudo-classes">https://web.dev/learn/css/pseudo-classes</a></p>
+</body>
+
+</html>

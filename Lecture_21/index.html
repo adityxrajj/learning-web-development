@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity & Dascade</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: violet;                      
+        }
+
+        /* The specificity of this selector is 10  */
+        .color-3 {
+            color: darkslategrey;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.color-1 {
+            color: darkcyan;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: burlywood;
+        }
+
+        /* The specificity of this selector is 10  */
+        .color-2 {
+            color: darkolivegreen;
+        }
+
+
+        /* This is only Example */
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    Specificity Calculation :
+
+    Universal Selector: 0
+    Element selectors and pseudo-elements: 1
+    Class selectors, attribute selectors, and pseudo-classes: 10
+    ID selectors: 100
+    Inline styles: 1000 
+    -->
+
+    <div>
+        <h1 class="color-1 color-2 color-3" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
