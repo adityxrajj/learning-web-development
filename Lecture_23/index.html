@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* display: inline; */
+            display: inline-block;
+            border: 2px solid maroon;
+            width: 400px;
+            margin: 20px;
+            padding: 40px;
+            /* display: none; */
+        }
+
+        .box-1 {
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+
+    <div class="box box-1">Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+</body>
+
+</html>
