@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size Unit</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* html {
+            font-size: 12px;
+        } */
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid #333333;
+            padding: 10px;
+            /* width: 1920px; */
+            width: 80vw;
+            height: 7vh;
+            margin: auto;
+            background-color: #d0ffd0;
+            font-size: 24px
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 1px solid #333333;
+            padding: 10px;
+            width: 1920px;
+            width: 80vw;
+            /* height: 75vh; */
+            min-height: 80vh;
+            margin: 20px auto;
+            background-color: #f2d0ff;
+            font-size: 16px;
+        }
+
+        .container > div {
+            font-size: 1.5rem;
+            width: 50%;
+            border: 1px solid darkgray;
+            padding: 5px;
+        }
+
+        .container > div > p {
+            width: 50%;
+            border: 1px solid darkgray;
+            padding: 10px;
+        }
+
+        .container-2 {
+            box-sizing: border-box;
+            border: 1px solid #333333;
+            background-color: #ffcccc;
+            padding: 10px;
+            font-size: 24px;
+            /* width: 100vmin; */
+            width: 80vw;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="container">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto voluptatibus et
+            maiores,
+            ea aperiam ab cum ipsa, debitis quam minima velit magni laborum sapiente optio molestiae
+            tenetur natus inventore deleniti expedita nesciunt voluptatem possimus officiis qui!
+            Obcaecati, mollitia? Facilis ipsa quo cupiditate sequi aut autem sit atque veritatis
+            nisi dicta explicabo iusto ipsum ea, quia blanditiis sint animi eaque officia
+            accusantium numquam dolores. Soluta, numquam.
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quae voluptatum quia
+                veniam, accusamus vel iusto earum recusandae sit minus eaque.</p>
+
+        </div>
+    </div>
+
+    <div class="container-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate?
+    </div>
+</body>
+
+</html>
